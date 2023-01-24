@@ -1,0 +1,58 @@
+.background{
+    background-color:  #47455A;
+    height: 100vh;
+    position: relative;
+}
+.banner {
+  position:absolute;
+  width: 80%;
+  bottom: 0px;
+  right: 0px;
+}
+.banner-sub-img {
+position:absolute;
+top:18%;
+z-index: 1;
+right: 20%;
+}
+
+.heading{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+color: #11131E;
+}
+.heading2{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 160%;
+color: #797979;
+text-align: center;
+}
+.inputFields input{
+    background: #F2F4F8;
+border-radius: 10px;
+}
+.inputFields{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 28px;
+/* identical to box height, or 175% */
+
+text-transform: capitalize;
+
+color: #3B414A;
+}
+.btn1{
+    border-radius: 100px;
+    border: none;
+    width: 130px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
