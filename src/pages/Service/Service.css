@@ -1,0 +1,46 @@
+.service-form{
+    border-radius: 15px;
+
+}
+.service-section{
+    background: #E5E5E5;
+}
+.form-head{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 25px;
+line-height: 45px;
+text-transform: capitalize;
+color: #3B414A;
+}
+.form-head img{
+    float: right;
+}
+.service-form label{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 28px;
+/* identical to box height, or 175% */
+margin: 10px;
+text-transform: capitalize;
+
+color: #3B414A;
+}
+
+.service-form input{
+    margin: 10px;
+}
+.btnSubmit{
+background: #47455A;
+border-radius: 100px;
+color: white;
+border:none;
+width:200px;
+line-height: 40px;
+margin: auto;
+
+}
+

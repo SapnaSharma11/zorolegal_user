@@ -1,0 +1,583 @@
+.top-header{
+    background: #47455A; 
+    position: relative;
+}
+.head{
+     font-family: 'Brush Script MT'; 
+font-style: italic;
+font-weight: 400;
+font-size: 40px;
+line-height: 49px;
+text-transform: capitalize;
+color: #FFEC87;
+}
+.sub-heading{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 58px;
+line-height: 85px;
+text-transform: capitalize;
+color: #FFFFFF;
+}
+.content{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+text-transform: capitalize;
+color: #FFFFFF;
+}
+.get-started{
+    background: linear-gradient(180deg, #C8ECFC 0%, #F5FAD6 100%);
+border-radius: 100px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 30px;
+text-transform: capitalize;
+color: #47455A;
+}
+.arrow-border{
+    border: 2px solid #FFEC87;
+    border-radius: 50%;
+    background: #47455A;
+    width: 12%;
+    position:absolute;
+    text-align: center;
+    padding:50px;
+    bottom: -65px;
+    right: 45%;
+    z-index: 1;
+}
+@font-face {
+    font-family: 'Brush Script MT';
+    src: url('../../../public/fonts/BrushScriptMT.eot');
+    src: url('../../../public/fonts/BrushScriptMT.eot?#iefix') format('embedded-opentype'),
+        url('../../../public/fonts/BrushScriptMT.woff2') format('woff2'),
+        url('../../../public/fonts/BrushScriptMT.woff') format('woff'),
+        url('../../../public/fonts/BrushScriptMT.ttf') format('truetype'),
+        url('../../../public/fonts/BrushScriptMT.svg#BrushScriptMT') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+:root{
+    --poppins-font: 'Poppins';
+    --brushscriptmt: 'Brush Script MT';
+}
+body{
+    font-family: --poppins-font, sans-serif;
+}
+.list-style-none{
+    list-style: none;
+}
+.btn{
+    width: 200px;
+    height: 60px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: capitalize;
+    color: #47455A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-gradient{
+    background: linear-gradient(180deg, #C8ECFC 0%, #F5FAD6 100%);
+    border-radius: 100px;
+}
+.app-header{
+    top:0;
+    left:0;
+    z-index: 999;
+    padding:15px 0;
+}
+.app-header .navbar-expand-lg .navbar-nav .nav-link{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin: 0 12px;
+}
+.app-banner{
+    background-color: #47455A;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.app-banner-graphic-right{
+    position: absolute;
+    top:0;
+    right: 0;
+    height: 75vh;
+}
+.banner-right-graphic-shape{
+    position: absolute;
+    top:0;
+    right:0;
+    height: 100%;
+}
+.banner-top-right-spare{
+    position: absolute;
+    right:0;
+    top: 0;
+    height: 230px;
+    object-fit: contain;
+}
+.banner-left-shape{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 330px;
+    object-fit: contain;
+}
+.banner-girl{
+    position: absolute;
+    bottom:0;
+    right:0;
+    height: 80%;
+}
+.app-banner-content{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.app-banner-content h5{
+    font-family: var(--brushscriptmt);
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: capitalize;
+    color: #FFEC87;
+}
+.app-banner-content h1{
+    font-weight: 700;
+    font-size: 60px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin:0;
+}
+.app-banner-content p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin: 30px 0 40px 0;
+}
+.app-login-btn{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 24px;
+}
+.app-register-btn{
+    display: flex;
+    padding: 8px 8px 8px 30px;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    text-transform: capitalize;
+    color: #47455A;
+    text-decoration: none;
+}
+.app-register-btn span{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #47455A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 18px;
+}
+.bottom-left-arrow{
+    width: 200px;
+    height: 200px;
+    background-color: #47455A;
+    padding: 10px;
+    position: absolute;
+    bottom: -40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    left: 20%;
+    z-index: 9;
+}
+.bottom-left-arrow img{
+    width: 156px;
+    height: 156px;
+    border: 2px solid #FFEC87;
+    border-radius: 50%;
+    padding: 40px;
+    object-fit: none;
+}
+.app-our-services{
+    position: relative;
+    padding:100px 0;
+    background-color: #f9f9f9;
+}
+.blue-green-shadow{
+    position: absolute;
+    bottom:0;
+    right:0;
+    height: 300px;
+}
+.app-our-services-left{
+    display: flex;
+    flex-direction: column;    
+}
+.app-our-services-left h2{
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: capitalize;
+    color: #47455A;  
+    margin-bottom: 10px;  
+}
+.app-our-services-left p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #797979;
+}
+.app-our-services-left a{
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #47455A;
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+.app-our-services-left a img{
+    margin-left: 6px;
+    width: 12px;
+}
+.app-our-services-left a::before{
+    content: "";
+    background-color: #FFEC87;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top:50%;
+    left:-30px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    z-index: -1;
+}
+.five-dots-graphic{
+    width: fit-content;
+    height: 60px;
+    margin-top: 80px;
+}
+.app-service-card{
+    background-color: #fff;
+    padding: 20px 25px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.app-service-card-title{
+    display: flex;
+    align-items: center;
+}
+.app-service-card-image{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app-service-card-image img{
+    object-fit: contain;
+    width: 25px;
+}
+.app-service-card-title-content{
+    width: calc(100% - 60px);
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.app-service-card-title-content h5{
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #47455A;
+    margin: 0;
+}
+.app-service-card-title-content p{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: capitalize;
+    color: #47455A;
+    opacity: 0.5;
+    margin: 0;
+
+}
+.app-service-card-para{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: capitalize;
+    color: #797979;
+    margin: 12px 0 0 0;
+}
+.black-bg{
+    background: #353A47;
+}
+.yellow-bg{
+    background: #EBC043;
+}
+.red-bg{
+    background-color: #FE4A49;
+}
+.green-bg{
+    background-color:#42E3AF;
+}
+.app-about{
+    background-color: #47455A;
+    padding:60px 0;
+}
+.app-about h3{
+    font-weight: 700;
+    font-size: 35px;
+    text-transform: capitalize;
+    color: #FFEC87;
+    margin-bottom: 20px;
+}
+.app-about p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+.app-services{
+    padding-top: 60px;
+    background-color: #fff;
+}
+.app-services-title h3{
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: capitalize;
+    color: #71EAC3;
+    font-family: var(--brushscriptmt);
+}
+.app-services-title h2{
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: capitalize;
+    color: #47455A;
+}
+.app-services-title img{
+    height: 60px;
+}
+.app-services-tabs{
+    margin-top: 50px;
+}
+.app-services-tabs .nav-pills .nav-item{
+    width: 15%;
+}
+.app-services-tabs .nav-pills .nav-item .nav-link{
+    padding: 15px 50px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+}
+.app-services-tabs .nav-pills .nav-item .nav-link.active{
+    background: #47455A;
+    position: relative;
+}
+.app-services-tabs .nav-pills .nav-item .nav-link.active::after{
+    content: "";
+    background-image: url('../../../public/images/upchevron.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: absolute;
+    bottom: -31px;
+    left: 50%;
+    width: 30px;
+    height: 20px;
+    transform: translateX(-50%);
+    z-index: 9999999;
+}
+.services-tab-title span{
+    width: 50px;
+    height: 50px;
+    background: #47455A;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app-services-tabs .nav-pills .nav-item .nav-link.active .services-tab-title span{
+    background: linear-gradient(180deg, #C8ECFC 0%, #F5FAD6 100%);
+}
+.services-tab-title img{
+    width: 28px;
+}
+.app-services-tabs .nav-pills .nav-item .nav-link.active .services-tab-title img {
+    filter: invert(1);
+}
+.services-tab-title p{
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #47455A;
+    text-align: left;
+    margin: 20px 0 0 0;
+}
+.app-services-tabs .nav-pills .nav-item .nav-link.active .services-tab-title p{
+    color: #FFFFFF;
+}
+.app-services-tabs .tab-content{
+    background: #47455A;
+    padding:60px 
+}
+.app-services-tabs-wrapper{
+    background-color: #fff;
+    border-radius: 30px;
+    padding:40px;
+}
+.app-services-tabs-wrapper .app-service-card{
+    background: #F8F8F8;
+    transition: 0.2s all ease-in-out;
+    margin: 15px 0;
+}
+.app-services-tabs-wrapper .app-service-card .app-service-card-image{
+    background: #353A47;
+    transition: 0.2s all ease-in-out;
+}
+.app-services-tabs-wrapper .app-service-card:hover{
+    background: #353A47;
+}
+.app-services-tabs-wrapper .app-service-card:hover .app-service-card-image{
+    background: linear-gradient(180deg, #C8ECFC 0%, #F5FAD6 100%);
+}
+.app-services-tabs-wrapper .app-service-card:hover .app-service-card-image img{
+    filter: invert(1);
+}
+.app-services-tabs .app-service-card:hover h5,
+.app-services-tabs .app-service-card:hover p {
+    color: #fff !important;
+}
+.app-services-tabs .nav-pills{
+    margin-bottom: 30px;
+}
+.app-clients{
+    padding: 100px 0;
+    position: relative;
+    z-index: 2;
+}
+.app-clients:before{
+    content: "";
+    background-image: url('../../../public/images/clients-section-bg.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1;
+}
+
+.app-clients-slider{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.app-clients-slider .owl-carousel{
+    width: 80%;
+}
+.app-clients-card{
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 12px 60px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    position: relative;
+}
+.app-clients-card::after{
+    content: "";
+    background: linear-gradient(180deg, #2BCE72 0%, #10AD54 100%);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 0 0 10px 10px;
+}
+.app-clients-card .app-clients-image{
+    width:100px !important;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 50%;
+    margin-top: -80px;
+}
+.app-clients-card .app-clients-ratings{
+    height: 20px;
+    margin-top: 20px;
+}
+.app-clients-card h2{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #082344;
+    margin-top: 10px;
+}
+.app-clients-card p{
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+    color: #797979;
+    min-height: 100px;
+}
+.app-clients-slider .owl-nav{
+    display: none !important;
+}
+.app-clients-slider .owl-dots{
+    margin-top: 30px;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background: linear-gradient(180deg, #2BCE72 0%, #10AD54 100%);
+}
+.bottom-left-fivedots{
+    height: 60px;
+    position: absolute;
+    bottom:-50px;
+    left:0;
+}
+
+

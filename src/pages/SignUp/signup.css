@@ -56,3 +56,22 @@ color: #3B414A;
     padding-top: 5px;
     padding-bottom: 5px;
 }
+.top-heading{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 100;
+font-size: 35px;
+text-transform: capitalize;
+color: #dcdcdc;
+}
+.top-subheading{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+text-transform: capitalize;
+color: #FFFFFF;
+}
+.top-subheading span{
+    color:#FFEC87;
+}

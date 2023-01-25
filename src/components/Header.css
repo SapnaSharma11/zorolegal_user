@@ -1,0 +1,38 @@
+.navbar-expand-lg{
+background: #47455A;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+text-transform: capitalize;
+color: #FFFFFF;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+margin: 12px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+text-transform: capitalize;
+color: #FFFFFF;
+
+}
+.register-btn{
+    background: linear-gradient(180deg, #C8ECFC 0%, #F5FAD6 100%);
+border-radius: 100px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 28px;
+text-transform: capitalize;
+color: #47455A;
+}
+.btn-arrow{
+    background: #47455A;
+    padding:8px;
+    border-radius:50% ;
+    margin: 5px;
+}

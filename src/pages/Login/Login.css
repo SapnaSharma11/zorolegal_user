@@ -74,6 +74,22 @@ box-shadow: #F2F4F8;
 
 
 }
+.otp_btn{
+    background: #FFFFFF;
+box-shadow: 0px 3px 40px 5px rgba(0, 0, 0, 0.05);
+border-radius: 5px;
+border: none;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 50px;
+width: 100%;
+/* identical to box height */
+
+
+color: #11131E;
+}
 h5{
     margin-left: 50px;
 }

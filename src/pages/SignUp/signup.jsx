@@ -1,5 +1,5 @@
 import React from "react";
-import './signup.css'
+import "./signup.css";
 import { Link } from "react-router-dom";
 
 function Signup() {
@@ -8,20 +8,20 @@ function Signup() {
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-6 background">
-            <img src="../../images/Ellipse.png"  className="banner-sub-img" alt=""></img>
-           <img
-              src="../../images/zoro.png"
-              className="ms-5 mt-5"
-              alt="Zorolegal
-            One-Stop-Shop Legal Platform."
-              style={{ width: "60%" }}
-            ></img>          
-            {/* <h2>Zoro</h2> */}
+            <p className="top-heading mt-3 p-3">
+              Zorolegal<br></br>
+              <span className="top-subheading">
+                <b>
+                  {" "}
+                  One-Stop-Shop <span>Legal Platform.</span>
+                </b>{" "}
+              </span>
+            </p>
             <div className="row">
               <div className="col-md-12 banner">
                 <img
                   className="img-fluid"
-                  src="../../images/Homepage.png"
+                  src="../../images/homepage.png"
                   alt=""
                 ></img>
               </div>
@@ -58,7 +58,6 @@ function Signup() {
                       type="text"
                       name="name"
                       class="form-control"
-                     
                       required
                     />
                   </div>
@@ -68,13 +67,12 @@ function Signup() {
                       type="text"
                       name="mobile"
                       class="form-control"
-                     
                       required
                     />
                   </div>
                   <div class="col-md-12">
                     <p class="small ">
-                      Already Have An Account ? <Link to="/login"> Login </Link> 
+                      Already Have An Account ? <Link to="/login"> Login </Link>
                       <button
                         class="ms-5 btn1"
                         type="submit"

@@ -3,26 +3,22 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Signup from "./pages/SignUp/signup.jsx";
-import Header from "./components/Header"
 import { Home } from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
-
-
-
+import History from "./pages/History/History";
+import Service from "./pages/Service/Service";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <Header></Header>
         <Routes>
           <Route path="/" element={<Signup />}/>
-          <Route path="/home" element={<Home />}/>
           <Route path="/login" element={<Login />}/>
-   
-
+          <Route path="/home" element={<Home />}/>
+          <Route path="/history" element={<History />}/>
+          <Route path="/service" element={<Service />}/>
           </Routes>
-        
       </BrowserRouter>
     </>
   );

@@ -1,0 +1,26 @@
+.app-footer{
+    background: #47455A;
+    padding:60px 0 40px 0;
+}
+.app-apk-buttons{
+    height:40px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    /* margin: 10px; */
+}
+.app-copyrights-section{
+    border-top: 1px solid rgb(0 0 0 / 20%);
+    text-align: center;
+    color:#fff;
+    margin:0;
+}
+ul li{
+    display: inline-block;
+    margin-left: 15px;
+}
+ul{
+    margin: 0px !important;
+    padding: 0px !important;
+}

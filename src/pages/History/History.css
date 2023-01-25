@@ -1,0 +1,44 @@
+.history-head{
+    background: #47455A;
+    padding:30px;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+text-transform: capitalize;
+color: #FFFFFF;
+}
+.table{
+    background: #E5E5E5;
+}
+.hist-subhead{
+    width: 100%;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 25px;
+line-height: 45px;
+text-transform: capitalize;
+color: #3B414A;
+}
+.hist-subhead span{
+font-weight: 400;
+font-size: 18px;
+color: #3B414A;
+float: right;
+}
+.view-btn{
+background: #47455A;
+border-radius: 100px;
+padding: 8px;
+width: 80px;
+border: none;
+color:white
+}
+.iSAVrt{
+    font-weight: bold;
+}
+.clear {
+    float: right;
+}
