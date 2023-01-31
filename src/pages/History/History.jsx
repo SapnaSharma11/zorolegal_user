@@ -40,8 +40,8 @@ function History() {
     },
     {
       name: "Action",
-      cell: (row) =>[
-      <button className="view-btn">view</button>,
+      cell: () =>[
+        <i class="fa-solid fa-eye text-success"></i>,
       <i class="fa-solid fa-trash-can text-danger m-3"></i>
     ],
       sortable: false,

@@ -36,7 +36,7 @@ export function Home() {
         </div>
       </section>
 
-      <section class="app-our-services " style={{ paddingTop: "150px" }}>
+      <section class="app-our-services ">
         <div class="container">
           <div class="row">
             <div class="col-md-5">
@@ -166,338 +166,1283 @@ export function Home() {
             <img src="../../images/five-dots.svg" alt="" />
           </div>
         </div>
-        <div class="app-services-tabs">
-          <div class="container">
-            <ul
-              class="nav nav-pills justify-content-between"
-              id="pills-tab"
-              role="tablist"
-            >
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link active"
-                  id="pills-home-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#pills-individual-services"
-                  type="button"
-                  role="tab"
-                  aria-controls="pills-home"
-                  aria-selected="true"
-                >
-                  <div class="services-tab-title">
-                    <span>
-                      <img src="../../images/individual-services.svg" alt="" />
-                    </span>
-                    <p>Individual Services</p>
-                  </div>
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="pills-profile-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#pills-rto-services"
-                  type="button"
-                  role="tab"
-                  aria-controls="pills-profile"
-                  aria-selected="false"
-                >
-                  <div class="services-tab-title">
-                    <span>
-                      <img src="../../images/rto-services.svg" alt="" />
-                      {/* <img src={rtoimg} /> */}
-                    </span>
-                    <p>RTO Services</p>
-                  </div>
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="pills-contact-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#pills-financial-services"
-                  type="button"
-                  role="tab"
-                  aria-controls="pills-contact"
-                  aria-selected="false"
-                >
-                  <div class="services-tab-title">
-                    <span>
-                      <img src="../../images/financial-services.svg" alt="" />
-                      {/* <img src={finimg} /> */}
-                    </span>
-                    <p>Financial Services</p>
-                  </div>
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="pills-contact-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#pills-registration-services"
-                  type="button"
-                  role="tab"
-                  aria-controls="pills-contact"
-                  aria-selected="false"
-                >
-                  <div class="services-tab-title">
-                    <span>
-                      <img
-                        src="../../images/registration-services.svg"
-                        alt=""
-                      />
-                    </span>
-                    <p>Registrations Services</p>
-                  </div>
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="pills-contact-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#pills-legal-services"
-                  type="button"
-                  role="tab"
-                  aria-controls="pills-contact"
-                  aria-selected="false"
-                >
-                  <div class="services-tab-title">
-                    <span>
-                      <img src="../../images/legal-services.svg" alt="" />
-                    </span>
-                    <p>Legal Services</p>
-                  </div>
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="pills-contact-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#pills-realestate-services"
-                  type="button"
-                  role="tab"
-                  aria-controls="pills-contact"
-                  aria-selected="false"
-                >
-                  <div class="services-tab-title">
-                    <span>
-                      <img src="../../images/realestate-services.svg" alt="" />
-                    </span>
-                    <p>Realestate Services</p>
-                  </div>
-                </button>
-              </li>
-            </ul>
-          </div>
 
-          <div class="tab-content" id="pills-tabContent">
-            <div class="container">
-              <div
-                class="tab-pane fade show active"
-                id="pills-individual-services"
-                role="tabpanel"
-                aria-labelledby="pills-individual-services"
-              >
-                <div class="app-services-tabs-wrapper">
-                  <div class="row">
-                    {/* -------- */}
-                    <div class="col-lg-4 col-md-6">
-                      <div class="app-service-card">
-                        <div class="app-service-card-title">
-                          <div class="app-service-card-image">
-                            <img
-                              src="../../images/drivingLicence.png"
-                              alt=""
-                            />
-                          </div>
-                          <div class="app-service-card-title-content">
-                            <h5>Driving License</h5>
-                            <p>Service</p>
-                          </div>
-                        </div>
-                        <p class="app-service-card-para">
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy
-                        </p>
-                      </div>
+        <div className="container mt-5">
+          <div className="row pb-1">
+            <div className="col-md-12 m-auto service-tabs">
+              <div className="row nav nav-tabs nav-tabs">
+                <div className="col  nav-item">
+                  <button
+                    class="nav-link active"
+                    data-bs-toggle="tab"
+                    data-bs-target="#Individual"
+                  >
+                    <div class="services-tab-title">
+                      <span>
+                        <img
+                          src="../../images/individual-services.svg"
+                          alt=""
+                        />
+                      </span>
+                      <p>
+                        Individual <br></br> Services
+                      </p>
                     </div>
-                    <div class="col-lg-4 col-md-6">
-                      <div class="app-service-card">
-                        <div class="app-service-card-title">
-                          <div class="app-service-card-image">
-                            {/* <img src={img2} /> */}
-                            <img src="../../images/Learner.png" alt="" />
-                          </div>
-                          <div class="app-service-card-title-content">
-                            <h5>Leaner Driving License</h5>
-                            <p>Service</p>
-                          </div>
-                        </div>
-                        <p class="app-service-card-para">
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy
-                        </p>
-                      </div>
+                  </button>
+                </div>
+
+                <div className="col  nav-item">
+                  <button
+                    class="nav-link"
+                    data-bs-toggle="tab"
+                    data-bs-target="#RTO"
+                  >
+                    <div class="services-tab-title">
+                      <span>
+                        <img src="../../images/rto-services.svg" alt="" />
+                      </span>
+                      <p>
+                        RTO <br></br>Services
+                      </p>
                     </div>
-                    <div class="col-lg-4 col-md-6">
-                      <div class="app-service-card">
-                        <div class="app-service-card-title">
-                          <div class="app-service-card-image">
-                            {/* <img src={img3} /> */}
-                            <img
-                              src="../../images/driving-licence.svg"
-                              alt=""
-                            />
-                          </div>
-                          <div class="app-service-card-title-content">
-                            <h5>Commercial Driving License</h5>
-                            <p>Service</p>
-                          </div>
-                        </div>
-                        <p class="app-service-card-para">
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy
-                        </p>
-                      </div>
+                  </button>
+                </div>
+
+                <div className="col  nav-item">
+                  <button
+                    class="nav-link"
+                    data-bs-toggle="tab"
+                    data-bs-target="#Financial"
+                  >
+                    <div class="services-tab-title">
+                      <span>
+                        <img src="../../images/financial-services.svg" alt="" />
+                        {/* <img src={finimg} /> */}
+                      </span>
+                      <p>
+                        Financial<br></br> Services
+                      </p>
                     </div>
-                    <div class="col-lg-4 col-md-6">
-                      <div class="app-service-card">
-                        <div class="app-service-card-title">
-                          <div class="app-service-card-image">
-                            {/* <img src={img4} /> */}
-                            <img
-                              src="../../images/international.png"
-                              alt=""
-                            />
-                          </div>
-                          <div class="app-service-card-title-content">
-                            <h5>International Driving License</h5>
-                          </div>
-                        </div>
-                        <p class="app-service-card-para">
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy
-                        </p>
-                      </div>
+                  </button>
+                </div>
+
+                <div className="col nav-item">
+                  <button
+                    class="nav-link"
+                    data-bs-toggle="tab"
+                    data-bs-target="#Registrations"
+                  >
+                    <div class="services-tab-title">
+                      <span>
+                        <img
+                          src="../../images/registration-services.svg"
+                          alt=""
+                        />
+                      </span>
+                      <p>
+                        Registrations <br></br> Services
+                      </p>
                     </div>
-                    <div class="col-lg-4 col-md-6">
-                      <div class="app-service-card">
-                        <div class="app-service-card-title">
-                          <div class="app-service-card-image">
-                            {/* <img src={img5} /> */}
-                            <img src="../../images/Vector.png" alt="" />
-                          </div>
-                          <div class="app-service-card-title-content">
-                            <h5>
-                              Registration Of
-                              <br /> Vechicles.
-                            </h5>
-                          </div>
-                        </div>
-                        <p class="app-service-card-para">
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy
-                        </p>
-                      </div>
+                  </button>
+                </div>
+
+                <div className="col nav-item">
+                  <button
+                    class="nav-link"
+                    data-bs-toggle="tab"
+                    data-bs-target="#Legal"
+                  >
+                    <div class="services-tab-title">
+                      <span>
+                        <img src="../../images/legal-services.svg" alt="" />
+                      </span>
+                      <p>
+                        Legal <br></br> Services
+                      </p>
                     </div>
-                    <div class="col-lg-4 col-md-6">
-                      <div class="app-service-card">
-                        <div class="app-service-card-title">
-                          <div class="app-service-card-image">
-                            {/* <img src={img6} /> */}
-                            <img
-                              src="../../images/Registration.png"
-                              alt=""
-                            />
-                          </div>
-                          <div class="app-service-card-title-content">
-                            <h5>Re-Registration Of Vechiles.</h5>
-                          </div>
-                        </div>
-                        <p class="app-service-card-para">
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy
-                        </p>
-                      </div>
+                  </button>
+                </div>
+
+                <div className="col nav-item">
+                  <button
+                    class="nav-link"
+                    data-bs-toggle="tab"
+                    data-bs-target="#Realestate"
+                  >
+                    <div class="services-tab-title">
+                      <span>
+                        <img
+                          src="../../images/realestate-services.svg"
+                          alt=""
+                        />
+                      </span>
+                      <p>
+                        Realestate <br></br>Services
+                      </p>
                     </div>
-                    <div class="col-lg-4 col-md-6">
-                      <div class="app-service-card">
-                        <div class="app-service-card-title">
-                          <div class="app-service-card-image">
-                            {/* <img src={img7} /> */}
-                            <img src="../../images/roadtax.png" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="container-fluid service-tab-content">
+          <div className="row">
+            <div className="col-md-11 m-auto">
+              <div class="tab-content p-3 ">
+                <div
+                  class="tab-pane fade show active Individual  "
+                  id="Individual"
+                >
+                  <div class="app-services-tabs-wrapper ">
+                    <div class="row">
+                      {/* -------- */}
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              <img
+                                src="../../images/drivingLicence.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>Driving License</h5>
+                              <p>Service</p>
+                            </div>
                           </div>
-                          <div class="app-service-card-title-content">
-                            <h5>Road Tax Payment</h5>
-                            <p>Service</p>
-                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
                         </div>
-                        <p class="app-service-card-para">
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy
-                        </p>
                       </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                      <div class="app-service-card">
-                        <div class="app-service-card-title">
-                          <div class="app-service-card-image">
-                            {/* <img src={img8} /> */}
-                            <img src="../../images/audiotax.png" alt="" />
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img2} /> */}
+                              <img src="../../images/Learner.png" alt="" />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>Leaner Driving License</h5>
+                              <p>Service</p>
+                            </div>
                           </div>
-                          <div class="app-service-card-title-content">
-                            <h5>Audio Tax Payment</h5>
-                            <p>Service</p>
-                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
                         </div>
-                        <p class="app-service-card-para">
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy
-                        </p>
                       </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                      <div class="app-service-card">
-                        <div class="app-service-card-title">
-                          <div class="app-service-card-image">
-                            {/* <img src={img9} /> */}
-                            <img src="../../images/fitness.png" alt="" />
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img3} /> */}
+                              <img
+                                src="../../images/driving-licence.svg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>Commercial Driving License</h5>
+                              <p>Service</p>
+                            </div>
                           </div>
-                          <div class="app-service-card-title-content">
-                            <h5>
-                              Fitness Certificate For
-                              <br />
-                              Commercial
-                            </h5>
-                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
                         </div>
-                        <p class="app-service-card-para">
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy
-                        </p>
                       </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img4} /> */}
+                              <img
+                                src="../../images/international.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>International Driving License</h5>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img5} /> */}
+                              <img src="../../images/Vector.png" alt="" />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>
+                                Registration Of
+                                <br /> Vechicles.
+                              </h5>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img6} /> */}
+                              <img src="../../images/Registration.png" alt="" />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>Re-Registration Of Vechiles.</h5>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img7} /> */}
+                              <img src="../../images/roadtax.png" alt="" />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>Road Tax Payment</h5>
+                              <p>Service</p>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img8} /> */}
+                              <img src="../../images/audiotax.png" alt="" />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>Audio Tax Payment</h5>
+                              <p>Service</p>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img9} /> */}
+                              <img src="../../images/fitness.png" alt="" />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>
+                                Fitness Certificate For
+                                <br />
+                                Commercial
+                              </h5>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      {/* ------ */}
                     </div>
-                    {/* ------ */}
+                  </div>
+                </div>
+
+                <div class="tab-pane fade RTO pt-3" id="RTO">
+                  <div class="app-services-tabs-wrapper">
+                    <div class="row">
+                      {/* -------- */}
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              <img
+                                src="../../images/drivingLicence.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>Driving License</h5>
+                              <p>Service</p>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img2} /> */}
+                              <img src="../../images/Learner.png" alt="" />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>Leaner Driving License</h5>
+                              <p>Service</p>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img3} /> */}
+                              <img
+                                src="../../images/driving-licence.svg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>Commercial Driving License</h5>
+                              <p>Service</p>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img4} /> */}
+                              <img
+                                src="../../images/international.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>International Driving License</h5>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img5} /> */}
+                              <img src="../../images/Vector.png" alt="" />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>
+                                Registration Of
+                                <br /> Vechicles.
+                              </h5>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img6} /> */}
+                              <img src="../../images/Registration.png" alt="" />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>Re-Registration Of Vechiles.</h5>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img7} /> */}
+                              <img src="../../images/roadtax.png" alt="" />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>Road Tax Payment</h5>
+                              <p>Service</p>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img8} /> */}
+                              <img src="../../images/audiotax.png" alt="" />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>Audio Tax Payment</h5>
+                              <p>Service</p>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img9} /> */}
+                              <img src="../../images/fitness.png" alt="" />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>
+                                Fitness Certificate For
+                                <br />
+                                Commercial
+                              </h5>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      {/* ------ */}
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade Financial pt-3" id="Financial">
+                  <div class="app-services-tabs-wrapper">
+                    <div class="row">
+                      {/* -------- */}
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              <img
+                                src="../../images/drivingLicence.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>Driving License</h5>
+                              <p>Service</p>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img2} /> */}
+                              <img src="../../images/Learner.png" alt="" />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>Leaner Driving License</h5>
+                              <p>Service</p>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img3} /> */}
+                              <img
+                                src="../../images/driving-licence.svg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>Commercial Driving License</h5>
+                              <p>Service</p>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img4} /> */}
+                              <img
+                                src="../../images/international.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>International Driving License</h5>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img5} /> */}
+                              <img src="../../images/Vector.png" alt="" />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>
+                                Registration Of
+                                <br /> Vechicles.
+                              </h5>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img6} /> */}
+                              <img src="../../images/Registration.png" alt="" />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>Re-Registration Of Vechiles.</h5>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img7} /> */}
+                              <img src="../../images/roadtax.png" alt="" />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>Road Tax Payment</h5>
+                              <p>Service</p>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img8} /> */}
+                              <img src="../../images/audiotax.png" alt="" />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>Audio Tax Payment</h5>
+                              <p>Service</p>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img9} /> */}
+                              <img src="../../images/fitness.png" alt="" />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>
+                                Fitness Certificate For
+                                <br />
+                                Commercial
+                              </h5>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      {/* ------ */}
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="tab-pane fade Registrations pt-3"
+                  id="Registrations"
+                >
+                  <div class="app-services-tabs-wrapper">
+                    <div class="row">
+                      {/* -------- */}
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              <img
+                                src="../../images/drivingLicence.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>Driving License</h5>
+                              <p>Service</p>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img2} /> */}
+                              <img src="../../images/Learner.png" alt="" />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>Leaner Driving License</h5>
+                              <p>Service</p>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img3} /> */}
+                              <img
+                                src="../../images/driving-licence.svg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>Commercial Driving License</h5>
+                              <p>Service</p>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img4} /> */}
+                              <img
+                                src="../../images/international.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>International Driving License</h5>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img5} /> */}
+                              <img src="../../images/Vector.png" alt="" />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>
+                                Registration Of
+                                <br /> Vechicles.
+                              </h5>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img6} /> */}
+                              <img src="../../images/Registration.png" alt="" />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>Re-Registration Of Vechiles.</h5>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img7} /> */}
+                              <img src="../../images/roadtax.png" alt="" />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>Road Tax Payment</h5>
+                              <p>Service</p>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img8} /> */}
+                              <img src="../../images/audiotax.png" alt="" />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>Audio Tax Payment</h5>
+                              <p>Service</p>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img9} /> */}
+                              <img src="../../images/fitness.png" alt="" />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>
+                                Fitness Certificate For
+                                <br />
+                                Commercial
+                              </h5>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      {/* ------ */}
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade Legal pt-3" id="Legal">
+                  <div class="app-services-tabs-wrapper">
+                    <div class="row">
+                      {/* -------- */}
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              <img
+                                src="../../images/drivingLicence.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>Driving License</h5>
+                              <p>Service</p>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img2} /> */}
+                              <img src="../../images/Learner.png" alt="" />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>Leaner Driving License</h5>
+                              <p>Service</p>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img3} /> */}
+                              <img
+                                src="../../images/driving-licence.svg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>Commercial Driving License</h5>
+                              <p>Service</p>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img4} /> */}
+                              <img
+                                src="../../images/international.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>International Driving License</h5>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img5} /> */}
+                              <img src="../../images/Vector.png" alt="" />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>
+                                Registration Of
+                                <br /> Vechicles.
+                              </h5>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img6} /> */}
+                              <img src="../../images/Registration.png" alt="" />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>Re-Registration Of Vechiles.</h5>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img7} /> */}
+                              <img src="../../images/roadtax.png" alt="" />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>Road Tax Payment</h5>
+                              <p>Service</p>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img8} /> */}
+                              <img src="../../images/audiotax.png" alt="" />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>Audio Tax Payment</h5>
+                              <p>Service</p>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img9} /> */}
+                              <img src="../../images/fitness.png" alt="" />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>
+                                Fitness Certificate For
+                                <br />
+                                Commercial
+                              </h5>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      {/* ------ */}
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade Realestate pt-3" id="Realestate">
+                  <div class="app-services-tabs-wrapper">
+                    <div class="row">
+                      {/* -------- */}
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              <img
+                                src="../../images/drivingLicence.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>Driving License</h5>
+                              <p>Service</p>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img2} /> */}
+                              <img src="../../images/Learner.png" alt="" />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>Leaner Driving License</h5>
+                              <p>Service</p>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img3} /> */}
+                              <img
+                                src="../../images/driving-licence.svg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>Commercial Driving License</h5>
+                              <p>Service</p>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img4} /> */}
+                              <img
+                                src="../../images/international.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>International Driving License</h5>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img5} /> */}
+                              <img src="../../images/Vector.png" alt="" />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>
+                                Registration Of
+                                <br /> Vechicles.
+                              </h5>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img6} /> */}
+                              <img src="../../images/Registration.png" alt="" />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>Re-Registration Of Vechiles.</h5>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img7} /> */}
+                              <img src="../../images/roadtax.png" alt="" />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>Road Tax Payment</h5>
+                              <p>Service</p>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img8} /> */}
+                              <img src="../../images/audiotax.png" alt="" />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>Audio Tax Payment</h5>
+                              <p>Service</p>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="app-service-card">
+                          <div class="app-service-card-title">
+                            <div class="app-service-card-image">
+                              {/* <img src={img9} /> */}
+                              <img src="../../images/fitness.png" alt="" />
+                            </div>
+                            <div class="app-service-card-title-content">
+                              <h5>
+                                Fitness Certificate For
+                                <br />
+                                Commercial
+                              </h5>
+                            </div>
+                          </div>
+                          <p class="app-service-card-para">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                          </p>
+                        </div>
+                      </div>
+                      {/* ------ */}
+                    </div>
                   </div>
                 </div>
               </div>
-
-             
-            
             </div>
           </div>
         </div>
@@ -525,6 +1470,9 @@ export function Home() {
           />
         </div>
       </section>
+
+    
+    
 
       <Footer></Footer>
     </>

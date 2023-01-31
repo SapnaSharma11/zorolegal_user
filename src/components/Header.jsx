@@ -26,8 +26,8 @@ function Header(){
               </li>
             </ul>
           
-            <a class="login-btn text-light me-5" href="/login" style={{textDecoration:"none"}}>Log In</a>
-            <button class="btn register-btn m-2" href="/signup">Register 
+            <a class="login-btn text-light ms-3 me-5" href="/login" style={{textDecoration:"none"}}>Log In</a>
+            <button class="btn register-btn m-2 " href="/signup">Register 
             <span><img  class='btn-arrow' src="../../images/gradient-arrow.svg" alt=""  /></span></button>
 
            

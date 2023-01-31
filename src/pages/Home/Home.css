@@ -435,7 +435,17 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px !important;
 }
+
+.service-tab-content{
+    background-color: #47455A ;
+}
+
+   .services-tab-title span{
+    margin: auto;
+   }
+
 .app-services-tabs .nav-pills .nav-item .nav-link.active .services-tab-title span{
     background: linear-gradient(180deg, #C8ECFC 0%, #F5FAD6 100%);
 }
@@ -445,17 +455,24 @@ body{
 .app-services-tabs .nav-pills .nav-item .nav-link.active .services-tab-title img {
     filter: invert(1);
 }
+
+.app-services-tabs .nav-pills .nav-item .nav-link.active .services-tab-title p{
+    color: #FFFFFF !important;
+}
 .services-tab-title p{
+    color: #47455A !important; 
     font-weight: 600;
     font-size: 18px;
     text-transform: capitalize;
-    color: #47455A;
-    text-align: left;
+    text-align: center;
     margin: 20px 0 0 0;
 }
-.app-services-tabs .nav-pills .nav-item .nav-link.active .services-tab-title p{
-    color: #FFFFFF;
+.service-tabs button{
+    width: 100%;
+  
 }
+
+
 .app-services-tabs .tab-content{
     background: #47455A;
     padding:60px 
@@ -514,19 +531,21 @@ body{
     justify-content: center;
 }
 .app-clients-slider .owl-carousel{
-    width: 80%;
+    width: 90%;
 }
 .app-clients-card{
-    width: 100%;
+    width: 95%;
     background: #FFFFFF;
     box-shadow: 0px 12px 60px rgba(0, 0, 0, 0.08);
     border-radius: 10px;
-    padding: 30px 20px;
+    padding-top:80px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
     position: relative;
+}
+.app-clients-card p{
+    padding: 20px;
 }
 .app-clients-card::after{
     content: "";
@@ -579,5 +598,230 @@ body{
     bottom:-50px;
     left:0;
 }
+.nav-tabs{
+    border: none !important;
+    --bs-nav-tabs-border-width: 1px;
+  }
+  .service-tabs .nav-link{
+    padding:0px !important
+  }
+  .service-tabs .nav-tabs .nav-link.active{
+    border: none !important;
+  }
+ 
+  .service-tabs .nav-tabs .nav-link{
+    border: none !important;
+  }
+
+@media only screen and (max-width: 768px) {
+    .services-tab-title p {
+        font-weight: 600;
+        font-size: 12px !important;
+        text-transform: capitalize;
+        color: #47455A;
+        text-align:center;
+        margin: 20px 0 0 0;
+    }
+    .btn-img{
+        margin-right: 10px !important;
+    }
+    .btn-text{
+        font-size: 12px;
+    }
+    
+    .app-service-card {
+        background-color: #fff;
+        padding: 12px 15px;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    .app-service-card-para{
+        font-size: 12px;
+    line-height: 21px;
+    }
+  }
+ 
+
+  @media only screen and (max-width: 425px) {
+    .services-tab-title p {
+        font-weight: 500;
+        font-size: 7px !important;
+        margin: 3px !important;
+        text-align: center;
+        font-weight: 600;
+    }
+    .btn-img{
+        margin-right: 100px !important;
+
+      
+    }
+  
+    .services-tab-title span {
+        width: 40px;
+    height: 40px;
+    }
+    .services-tab-title img {
+        width: 20px;
+    
+    }
+    .services-tab-title button {
+        width: 40px;
+    }
+    .app-services-tabs-wrapper .app-service-card {
+        background: #F8F8F8;
+        transition: 0.2s all ease-in-out;
+        margin: 5px 0;
+    }
+    .app-services-tabs-wrapper {
+        background-color: #fff;
+        border-radius: 30px;
+        padding: 5px;
+    }
+    .app-service-card-para{
+        font-size: 12px;
+    }
+    .app-service-card h5{
+        font-size: 14px;
+    }
+    .app-clients-card{
+        padding-top:60px;
+        height: 280px;
+        width: 90%;
+    }
+    .app-clients-card h2{
+        margin: 0px !important;
+        font-size: 12px;
+    }
+    .app-clients-card p{
+        padding: 4px ;
+        font-size: 11px;
+      
+    }
+
+    .app-clients-card .app-clients-ratings{
+        margin-top: 0px !important;
+        width: 30px !important;
+    }
+.app-clients-card .app-clients-image{
+    width: 45% !important;
+
+}
+   
+  }
+
+  @media only screen and (max-width: 375px) {
+   .service-tabs .nav-item{
+    margin: 0px !important;
+    padding: 0px !important;
+   }
+   .services-tab-title{
+    margin:10px !important;
+   }
+   .service-tabs button{
+    width: 15px !important;
+}
+.app-service-card{
+    padding: 10px;
+}
+  }
+
+  .btn-img{
+    background: linear-gradient(180deg, #C8ECFC 0%, #F5FAD6 100%);
+    border-radius: 14px;
+  }
+  .cp-btn{
+    
+    border: none;
+    color: red;
+    background-color: transparent;
+  }
+
+  .order-drp{
+    width: 100%;
+background: #3B414A;
+border-radius: 17px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+/* line-height: 20px; */
+/* identical to box height */
+
+
+color: #FFFFFF;
+  }
+
+
+  .profile-card-demo{
+    background: #41C2A4;
+border-radius: 18px;
+  }
+
+  .profile-card p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    }
+    .profile-card button{
+    background: #FFFFFF;
+    border-radius: 100px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    border: none;
+    color:#41C2A4;
+    }
+    .innercir{
+        width:80px;
+    }
+    .outercir{
+        width:80px;
+        margin-left:-79px;
+    }
+    .cirtext{
+        margin-top: -50px;
+        size:20px;
+    }
+
+    .profile-body{
+        background-color: #E5E5E5;
+    }
+    .lasttext{
+        color: red;
+    }
+    .dropdown image{
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .dropdown image img{
+        object-fit: contain;
+        width: 25px;
+    
+    }
+    .sub-btn{
+        background: #4B4C56;
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 100px;
+color: white;
+font-size: 14px;
+
+    }
+  
+
+
+
+  
 
 

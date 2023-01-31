@@ -28,17 +28,16 @@ font-size: 18px;
 color: #3B414A;
 float: right;
 }
-.view-btn{
-background: #47455A;
-border-radius: 100px;
-padding: 8px;
-width: 80px;
-border: none;
-color:white
-}
+
 .iSAVrt{
     font-weight: bold;
 }
 .clear {
     float: right;
+}
+@media only screen and (max-width: 320px) {
+    .hist-subhead span {
+        float: left;
+    }
+
 }

@@ -17,7 +17,7 @@ function Service() {
         </div>
       </div>
     <section className="service-section">
-        <div className="container form-section">
+        <div className="container form-section p-5">
             <div className="row">
                 <div className="col-md-10 m-auto bg-light p-4 service-form ">
                     <p className="form-head">Learner driving licence <img src="../../images/five-dots.svg" alt=""></img></p>
