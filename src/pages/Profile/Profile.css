@@ -1,222 +1,117 @@
-.history-head{
-background: #47455A;
-padding:30px;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 700;
-font-size: 30px;
-line-height: 45px;
-text-transform: capitalize;
-color: #FFFFFF;
-}
-.row{
-    width:100%;
-    display: flex;
-}
-.profile-leftdata{
-    width:100%;
-}
-.card1{
 
-    height: 30vh;
-    width: 60%;
-    background-color: #3bd3a0;
-    border-radius: 30px;
-    align-items: center;
-    text-align: center;
+.profile-card-d {
+  background: #41c2a4;
+  border-radius: 18px;
+  height: auto;
+}
 
+.profile-card-d h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
 }
-.profile-card{
-    background: #41C2A4;
-    border-radius: 18px;
+.profile-card-d p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #ffffff;
 }
-/* .profile-card h3{
-font-family: 'Poppins';
+
+.order-drp {
+  width: 100%;
+  background: #3b414a;
+  border-radius: 17px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+
+.profile-card-d button {
+  background: #ffffff;
+  border-radius: 100px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 25px;
+  border: none;
+  color: #41c2a4;
+}
+
+.dropdown image {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dropdown image img {
+  object-fit: contain;
+  width: 25px;
+}
+.change-btn {
+  background: #4b4c56;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 100px;
+  color: white;
+  font-size: 14px;
+}
+.remove-btn{
+    font-weight: 500;
+font-size: 14px;
+background-color: transparent;
+border: none;
+color: #797979;
+}
+
+.user_details{
+    font-family: 'Poppins';
 font-style: normal;
-font-weight: 700;
+color: #47455A;
+font-weight: 600;
 font-size: 18px;
 line-height: 27px;
-color: #FFFFFF;
-} */
-/* .profile-card p{
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 16px;
-color: #FFFFFF;
-} */
-/* .profile-card button{
-background: #FFFFFF;
-border-radius: 100px;
+}
+.user-form label{
+    
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 500;
-font-size: 14px;
-line-height: 21px;
-border: none;
-color:#41C2A4;
-} */
-/* .innercir{
-    width:85px;
-}
-.outercir{
-    width:80px;
-}
-.cirtext{
-    size:20px;
-    margin-top: 20px;
-} */
-  .innercir{
-    width: 80px;
-    position: absolute;
-    z-index: auto;
-    }
-    .outercir{
-    width: 80px;
-    position: relative;
-    z-index: 2;
-    }
-    .cirtext{
-        size:20px;
-        position: relative;
-        margin-top: -50px;
-    }
-
-.profile-card-demo{
-    background: #41C2A4;
-    border-radius: 18px;
-}
-.profile-card-demo h3{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 27px;
-    /* identical to box height */
-    color: #FFFFFF;
-    }
-    .profile-card-demo p{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    color: #FFFFFF;
-    }
-.profile-card-demo button{
-
-background: #FFFFFF;
-border-radius: 100px;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 21px;
-/* identical to box height */
-border: none;
-color:#41C2A4;
-}
-/* .profile-body{
-    background: #E5E5E5;
-} */
-.userpfl-body{
-    background-color:whitesmoke;
-}
-
-
-
-
-
-.heading{
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 45px;
-color: #11131E;
-}
-.btn1{
-    border-radius: 100px;
-    border: none;
-    width: 130px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-
-}
-.btn2{
-    border-radius: 100px;
-    border: none;
-    width: 130px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-.inputFields{
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 28px;
+font-size: 16px;
 text-transform: capitalize;
+
 color: #3B414A;
-background-color:rgba(255, 255, 255, 1);
 }
-.profile-body{
-    background-color: #E5E5E5;
-}
-.lasttext{
-    color: red;
-}
-.dropdown image{
-    width: 60px;
-    height: 60px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.dropdown image img{
-    object-fit: contain;
-    width: 25px;
-
-}
-.cp-btn{
-    border:none;
-    color:red;
-    background-color: transparent;
-}
-.sub-btn{
-background: #4B4C56;
-border: 1px solid rgba(0, 0, 0, 0.1);
-border-radius: 100px;
-color: white;
-font-size:14px;
-
-}
-.order-drp{
-    width: 96%;
-background: #3B414A;
-border-radius: 17px;
-font-family: 'Poppins';
+.user-form input::placeholder{
+    font-family: 'Poppins';
 font-style: normal;
-font-weight: 500;
-font-size: 15px;
-/* line-height: 20px; */
+font-weight: 400;
+font-size: 13px;
+line-height: 20px;
 /* identical to box height */
 
 
-color: #FFFFFF;
+color: #11131E;
 
+opacity: 0.6;
+}
+.user-form input{
+    border: 2px solid #EAEEF5;
+border-radius: 10px;
+}
+.btn-img {
+  background: linear-gradient(180deg, #c8ecfc 0%, #f5fad6 100%);
+  border-radius: 14px;
+}
+.cp-btn {
+  border: none;
+  color: red;
+  background-color: transparent;
 }
 
-
-.btn-img{
-    background: linear-gradient(180deg, #C8ECFC 0%, #F5FAD6 100%);
-    border-radius: 14px;
-  }
-  /* .btn-img i{
-    border-radius: 14px;
- 
-  } */
-  

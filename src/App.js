@@ -10,6 +10,7 @@ import Service from "./pages/Service/Service";
 import Profile from "./pages/Profile/Profile";
 
 
+
 function App() {
   return (
     <>
@@ -21,6 +22,7 @@ function App() {
           <Route path="/history" element={<History />}/>
           <Route path="/service" element={<Service />}/>
           <Route path="/profile" element={<Profile />}/>
+
 
           </Routes>
       </BrowserRouter>
