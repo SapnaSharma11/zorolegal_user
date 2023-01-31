@@ -43,11 +43,18 @@ line-height: 40px;
 margin: auto;
 
 }
+@media only screen and (max-width: 768px) {
+    .btnSubmit{
+        width: 170px !important;
+    }
+}
+
 @media only screen and (max-width: 320px) {
     .service-form {
         padding: 0px;
         margin-top: 10px;
     }
+
     
    
 
