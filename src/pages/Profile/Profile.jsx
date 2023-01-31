@@ -41,7 +41,7 @@ function Pro() {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  <span className="me-5  btn-img p-2">
+                  <span className="me-5  btn-img ms-0 p-2">
                    
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +83,7 @@ function Pro() {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  <span className="me-5  btn-img p-2">
+                  <span className="me-5  btn-img ms-0 p-2">
                   
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +107,7 @@ function Pro() {
                       </svg>
                     </svg>
                   </span>
-                  <span className="btn-text"> Dropdown button</span>
+                  <span className="btn-text text-end">Help & Support</span>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
                   <li>
@@ -157,7 +157,7 @@ function Pro() {
                       />
                     </svg>
                   </span>
-                  <span className="btn-text"> Dropdown button</span>
+                  <span className="btn-text ms-2">Logout</span>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
                   <li>
