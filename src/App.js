@@ -7,6 +7,8 @@ import { Home } from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
 import History from "./pages/History/History";
 import Service from "./pages/Service/Service";
+import Profile from "./pages/Profile/Profile";
+
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route path="/home" element={<Home />}/>
           <Route path="/history" element={<History />}/>
           <Route path="/service" element={<Service />}/>
+          <Route path="/profile" element={<Profile />}/>
+
           </Routes>
       </BrowserRouter>
     </>
