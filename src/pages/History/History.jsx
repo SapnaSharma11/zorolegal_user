@@ -14,6 +14,7 @@ function History() {
     },
     {
       name: "Service Name",
+      // eslint-disable-next-line jsx-a11y/anchor-is-valid
       cell: (row) => <a className="text-primary">{row.service}</a>,
       sortable: true,
     },

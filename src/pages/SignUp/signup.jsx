@@ -1,8 +1,51 @@
 import React from "react";
 import "./signup.css";
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 function Signup() {
+
+  const baseURL = "https://backend.zorolegal.com";
+
+  const [user, setUser] = useState({
+    name: "",
+    email: "",
+    mobile:""
+  });
+  let name, value;
+  const handleInputs = (e) => {
+    name = e.target.name;
+    value = e.target.value;
+    setUser({ ...user, [name]: value });
+   
+  };
+  const postData = async (e) => {
+    e.preventDefault();
+    
+
+   var config = {
+     method: "post",
+     url: `${baseURL}/api/users/register`,
+     headers: {
+       "Content-Type": "application/json",
+     },
+     data:user
+    };
+    axios(config)
+    .then(function (response) {
+      if(response.status === '200'){
+        window.alert("Successfully Register");
+      }
+     
+    })
+    .catch(function (error) {
+       window.alert("User Already Exists");
+      console.log(error);
+    });
+  }
+
+
   return (
     <>
       <div className="container-fluid">
@@ -46,6 +89,7 @@ function Signup() {
                         type="email"
                         name="email"
                         class="form-control"
+                        onChange={handleInputs}
                         id="yourUsername"
                         required
                       />
@@ -57,6 +101,7 @@ function Signup() {
                     <input
                       type="text"
                       name="name"
+                      onChange={handleInputs}
                       class="form-control"
                       required
                     />
@@ -66,6 +111,7 @@ function Signup() {
                     <input
                       type="text"
                       name="mobile"
+                      onChange={handleInputs}
                       class="form-control"
                       required
                     />
@@ -76,6 +122,7 @@ function Signup() {
                       <button
                         class="ms-5 btn1"
                         type="submit"
+                        onClick={postData}
                         style={{ background: "#47455A", color: "white" }}
                       >
                         Create Account

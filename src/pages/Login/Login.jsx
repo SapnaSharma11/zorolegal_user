@@ -1,7 +1,56 @@
 import React from "react";
 import "./Login.css";
 import { Link } from "react-router-dom";
+import axios from "axios";
+import { useState } from "react";
+
 function Login() {
+
+  const baseURL = "https://backend.zorolegal.com";
+  const [isDisabled, setDisabled] = useState(true);
+  const [user, setUser] = useState({
+    mobile: "",
+  });
+  let name, value;
+  const handleInputs = (e) => {
+    name = e.target.name;
+    value = e.target.value;
+    setUser({ ...user, [name]: value });
+   
+   
+  };
+  const postData = async (e) => {
+    e.preventDefault();
+   
+    if (user.mobile !== "") {
+      setDisabled(false)
+      var config = {
+        method: "post",
+        url: `${baseURL}/api/users/login`,
+        headers: {
+          "Content-Type": "application/json",
+        },
+        data: user,
+      };
+      axios(config)
+        .then(function (response) {
+          console.log(response);
+          if (response.status === "200") {
+            console.log(response.data);
+            localStorage.setItem("accessToken", response.data.accessToken);
+          }
+        })
+        .catch(function (error) {
+          setDisabled(true)
+          window.alert("User Not Found");
+          console.log(error);
+        });
+    } 
+   
+  
+  };
+
+
   return (
     <>
       <div className="container-fluid">
@@ -11,9 +60,9 @@ function Login() {
               Zorolegal<br></br>
               <span className="top-subheading">
                 <b>
-                  {" "}
+                  
                   One-Stop-Shop <span>Legal Platform.</span>
-                </b>{" "}
+                </b>
               </span>
             </p>
             <div className="row">
@@ -34,144 +83,59 @@ function Login() {
                   Welcome back! Log in with your data that you entered during
                   registration.
                 </p>
-                <form>
-                  <button className="otp_btn">
-                    <img src="../../images/Google.png" alt=""></img>Log in with
-                    OTP
-                  </button>
-                </form>
+               
                 <form class="row g-3 needs-validation" novalidate>
                   <div class="col-12">
-                    <label class="form-label">Email</label>
-                    <div class="input-group has-validation">
-                      <span class="input-group-text" id="inputGroupPrepend">
-                        @
-                      </span>
-                      <input
-                        type="email"
-                        name="email"
-                        class="form-control"
-                        id="yourUsername"
-                        placeholder="Ex@gmail.com"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <label class="form-label">Password</label>
+                    <label class="form-label">Mobile</label>
                     <input
-                      type="password"
+                      type="text"
                       name="mobile"
+                      onChange={handleInputs}
                       class="form-control"
                       required
                     />
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="flexCheckCheckedDisabled"
-                      />
-                      <label
-                        class="form-check-label"
-                        for="flexCheckCheckedDisabled"
-                      >
-                        Remember Me
-                        <p className="ff">
-                          <a href="/login"> forget your password? </a>
-                        </p>
-                      </label>
-                    </div>
                   </div>
+
                   <div class="col-md-12">
                     <p class="small ">
                       Already Have An Account ? <Link to="/"> Register </Link>
                       <button
-                        class="ms-5 btn1"
-                        type="submit"
+                        type="button"
+                        class=" ms-5 btn1"
+                        
+                        data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        disabled={isDisabled}
+                        onClick={postData}
                         style={{ background: "#47455A", color: "white" }}
                       >
                         Login
                       </button>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+                     
                     </p>
                   </div>
                 </form>
               </div>
             </div>
           </div>
-          {/* <div className="row inputFields">
-              <div className="col-md-8 mt-5 m-auto">
-              <div className="cc">
-                <p class="heading mt-5 text-center">Login to Zorolegal</p>
-                <p className="heading3 mt-2">
-                  Welcome back! Log in with your data that you entered during
-                  registration.
-                </p>
-               <div className="log">
-                <img  src="../../images/googleicon.png" alt="" width="80px" />
-                </div>
-                <div>
-                <h1>Log in with OTP</h1>
-                </div>
-                <div>
-
-
-                        <h5>-----------------------or---------------------------</h5>
-                </div>
-                <form class="row g-3 needs-validation" novalidate>
-                  <div class="col-12">
-
-
-                    <label class="form-label">Email</label>
-                    
-                    <div class="input-group has-validation">
-                    <span class="input-group-text" id="inputGroupPrepend">
-                        @
-                      </span>
-                      <input
-                        type="email"
-                        name="email"
-                        class="form-control"
-                        id="yourUsername"
-                        placeholder="Ex@gmail.com"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <label class="form-label">Password</label>
-                    <input
-                      type="password"
-                      name="mobile"
-                      class="form-control"
-                     
-                      required
-                    />
-                   <div class="form-check">
-               <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled" />
-               <label class="form-check-label" for="flexCheckCheckedDisabled">
-                Remember Me
-                <p className="ff"><a href="/login"> forget your password? </a></p>
-               </label>
-                </div>
-                        
-                  </div>
-                  <div class="col-md-12">
-                    <p class="small ">
-                      Don't Have An Account ? <a href="/login"> Register </a>
-                      <button
-                        class="ms-5 btn1"
-                        type="submit"
-                        style={{ background: "#47455A", color: "white" }}
-                      >
-                        Login 
-                      </button>
-                    </p>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div> */}
         </div>
       </div>
     </>
